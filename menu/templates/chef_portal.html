@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Chef Portal
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="static/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="static/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="static/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="static/select2/select2.min.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="static/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='landing.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chef_portal.css') }}">
+    <!--===============================================================================================-->
+
+    </head>
+    
+    <body>
+        <header id="header">
+            <a href="#" class="logo">Mess Catering</a>
+            <ul class="nav">
+                <li><a href="{{ url_for('home.index') }}" style= font-size:20px;>Home</a></li>
+                <li><a href="{{ url_for('home.about_us') }}" style= font-size:20px;>About Us</a></li>
+                <li><a href="{{ url_for('home.contact_us') }}" style= font-size:20px;>Contact Us</a></li>
+            </ul>
+        </header>
+
+        <div class="container-md">
+            <div class="card__container">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__header"></h3>
+                  <p class="card__info"></p>
+                  <button class="card__button">View Orders</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__header"></h3>
+                  <p class="card__info"></p>
+                  <button class="card__button">Update Menu</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

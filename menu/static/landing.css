@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 1000px;
+  background: #000000;
+  background-image: url('./images/food6.jpeg');
+  opacity: 1;
+  background-position: absolute;
+  background-size: cover;
+}
+
+header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  z-index: 1000;
+  transition: 0.6s;
+  background-color: black;
+  opacity: 0.8;
+}
+header .logo {
+  font-weight: 700;
+  color: #f4c95d;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style-type: none;
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: o.6s;
+}
+header ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+header ul li a:hover {
+  text-decoration: none;
+  color: #e7e393;
+}
+header.sticky.logo {
+  color: black;
+}
+header ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+header ul li:hover > ul,
+header ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #e6e6e6;
+  border-bottom: 1px solid(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+header.sticky,
+header.sticky ul li a {
+  color: #000000;
+}
+header.sticky ul li a:hover {
+  color: #e7e393;
+}
+
+.container {
+  margin-top: 15%;
+  padding-left: 15%;
+}
+h1 {
+  text-transform: uppercase;
+  color: white;
+  align-items: center;
+}
